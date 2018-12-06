@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/color_them</color>
+    <color name="colorPrimaryDark">@color/color_them</color>
+    <color name="colorAccent">#333333</color>
+
+    <color name="color_them">#2c9bed</color>
+
+    <color name="login_background_color">#309DD3</color>
+    <color name="login_input_color">#F3F0F1</color>
+    <color name="transparent">#00000000</color>
+    <color name="login_button_color">#5AAAD9</color>
+    <color name="divider">#E9EAEB</color>
+    <color name="background_color">#FFFFFF</color>
+    <color name="user_digit_color">#3bb0fb</color>
+    <color name="text_color_333">#333333</color>
+    <color name="user_border_color">#C8DCF1</color>
+    <color name="user_border_text_color">#A2A2AA</color>
+</resources>

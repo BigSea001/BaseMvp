@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="394px"
+                android:background="@drawable/user_background">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <cn.easier.market.widget.CircleImageView
+                        android:id="@+id/avatar"
+                        android:layout_width="185px"
+                        android:layout_height="185px"
+                        android:src="@drawable/avatar" />
+
+                    <TextView
+                        android:id="@+id/basic_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:textSize="30px"
+                        android:text="经销商基本信息"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/order"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/order_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="40"
+                            android:textColor="@color/user_digit_color"
+                            android:textSize="40px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/笔"
+                            android:textColor="@color/user_digit_color"
+                            android:textSize="30px" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:textColor="@color/text_color_333"
+                        android:textSize="24px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="交易订单" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/balance_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥"
+                            android:textColor="@color/user_digit_color"
+                            android:textSize="30px" />
+                        <TextView
+                            android:id="@+id/balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="40"
+                            android:textColor="@color/user_digit_color"
+                            android:textSize="40px" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:textColor="@color/text_color_333"
+                        android:textSize="24px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="账户余额" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/monthly_bill"
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:layout_marginBottom="20px"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/bill"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:text="我的月结账单"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/tv_after_sale"
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:layout_marginBottom="20px"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/bill"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:text="售后订单"
+            android:textSize="32px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="528px"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:textSize="32px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="营收趋势" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:textSize="32px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/dealer_user_border"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/order_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textSize="32px"
+                    android:text="订单金额"
+                    android:textColor="@color/user_border_text_color" />
+
+                <TextView
+                    android:id="@+id/payee_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textSize="32px"
+                    android:text="收款金额"
+                    android:textColor="@color/user_border_text_color" />
+
+                <TextView
+                    android:id="@+id/order_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textSize="32px"
+                    android:text="订单量"
+                    android:textColor="@color/user_border_text_color" />
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <View
+                android:visibility="gone"
+                android:background="@color/text_color_333"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="0.5dp"/>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linear_bottom"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="57px">
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:padding="15px"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/setting" />
+
+        <ImageView
+            android:id="@+id/message"
+            android:layout_gravity="right|center_vertical"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:padding="15px"
+            android:src="@drawable/message"/>
+    </FrameLayout>
+
+</RelativeLayout>
